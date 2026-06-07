@@ -39,7 +39,7 @@ insert into executor
 values (14, 'Надежда Кадышева');
 
 insert into executor  
-values (15, 'Отава-Ё');
+values (15, 'Отава - Ё');
 
 --заполнение таблицы исполнителей и жанров
 insert into executorgenre 
@@ -151,6 +151,13 @@ insert into tracks
 values (22, 'молодые ветра', '03:30', 1);
 insert into tracks 
 values (23, 'кино', '3:38', 1);
+insert into tracks 
+values (24, 'новый трек', '03:33', 2);
+
+insert into tracks 
+values (200, 'my love', '03:40', 1);
+insert into tracks 
+values (300, 'мой неноглядный', '3:38', 2);
 
 --сборники
 insert into trackscollection  
@@ -170,4 +177,19 @@ insert into trackscollection
 values (22,1);
 insert into trackscollection  
 values (23,1);
+
+--подгон данных под проверку
+insert into albums 
+values(333, 'Новый альбом', '2019.03.23');
+insert into tracks 
+values(512, 'Сольник 7', '02:43', 333);
+
+insert into trackscollection 
+values(512,1);
+insert into executor 
+values(1000, 'Король и Шут');
+insert into albumexecutor 
+values(333,1000);
+insert into trackscollection 
+values(512,2);
 --
